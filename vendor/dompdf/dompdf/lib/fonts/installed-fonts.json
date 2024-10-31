@@ -1,0 +1,19 @@
+{
+    "font awesome 5 brands": {
+        "normal": "font_awesome_5_brands_normal_6b898e2c5cc213c4404811c323fdcab6"
+    },
+    "font awesome 5 free": {
+        "normal": "C:\\xampp\\htdocs\\PROJECT_MCU\\vendor\\dompdf\\dompdf\/lib\/fonts\/font_awesome_5_free_normal_09a636486ad6e3e7e715ee5a0373f2ab",
+        "900": "font_awesome_5_free_900_f6c1d66ca0f6a9c230936770c324b606"
+    },
+    "poppins": {
+        "300": "C:\\xampp\\htdocs\\PROJECT_MCU\\vendor\\dompdf\\dompdf\/lib\/fonts\/poppins_300_87f0a8a73c876e947643eb7d19bec0b7",
+        "500": "C:\\xampp\\htdocs\\PROJECT_MCU\\vendor\\dompdf\\dompdf\/lib\/fonts\/poppins_500_a885de0ea35a644243715bf64b6d1a65",
+        "600": "poppins_600_ca6698540fb485d7b756c91a54a37d8e"
+    },
+    "inter": {
+        "300": "C:\\xampp\\htdocs\\PROJECT_MCU\\vendor\\dompdf\\dompdf\/lib\/fonts\/inter_300_ffc5f81dee6c59552a98700cb9ce21c6",
+        "normal": "C:\\xampp\\htdocs\\PROJECT_MCU\\vendor\\dompdf\\dompdf\/lib\/fonts\/inter_normal_3ba32a48b7860dfb008d0b1457da683a",
+        "600": "inter_600_d0d96b12edf8a78fd85c552d12762fb0"
+    }
+}

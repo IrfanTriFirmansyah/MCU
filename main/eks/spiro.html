@@ -1,0 +1,96 @@
+          <table class="w-100" style="font-size: 15px">
+            <tr style="height: 110px">
+              <td
+                colspan="4"
+                style=" text-align: center;vertical-align: bottom;font-size: 30px;font-style: italic;font-weight: bold;padding-bottom: 30px;">
+                SPIROMETRI
+              </td>
+            </tr>
+            <tr style="height: 10px; background-color: #ffcc80">
+              <td class="border p-2">
+                <b>Pemeriksaan</b>
+              </td>
+              <td class="border p-2" style="width: 150px; text-align: center">
+                <b>Nilai</b>
+              </td>
+              <td class="border p-2" style="width: 150px; text-align: center">
+                <b>Prediksi</b>
+              </td>
+              <td class="border p-2" style="width: 150px; text-align: center">
+                <b>%</b>
+              </td>
+            </tr>
+            <tr style="height: 10px">
+              <td class="border p-2">BEST FVC (L)</td>
+              <td class="border p-2">
+                <?= $sqls['nilai_fvc'] ?>
+              </td>
+              <td class="border p-2">
+                <?= $sqls['pred_fvc'] ?>
+              </td>
+              <td class="border p-2">
+                <?= $sqls['persen_fvc'] ?>
+              </td>
+            </tr>
+            <tr style="height: 10px">
+              <td class="border p-2">BEST FEV 1 (L)</td>
+              <td class="border p-2">
+                <?= $sqls['nilai_fev'] ?>
+              </td>
+              <td class="border p-2">
+                <?= $sqls['pred_fev'] ?>
+              </td>
+              <td class="border p-2">
+                <?= $sqls['persen_fev'] ?>
+              </td>
+            </tr>
+            <tr style="height: 10px">
+              <td class="border p-2">FEV 1 / FCV (%)</td>
+              <td class="border p-2">
+                <?= $sqls['nilai_fcv'] ?>
+              </td>
+              <td class="border p-2">
+                <?= $sqls['pred_fcv'] ?>
+              </td>
+              <td class="border p-2">
+                <?= $sqls['persen_fcv'] ?>
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td
+                colspan="2"
+                style="font-size: 15px; font-weight: bold; background-color: #ffcc80"
+              >
+                KESIMPULAN
+              </td>
+              <td
+                colspan="2"
+                style="font-size: 15px; font-weight: bold; background-color: #ffcc80"
+              >
+                SARAN
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" style="height: 150px; vertical-align: top" class="pe-3">
+                <textarea
+                  name=""
+                  id="autoResizeTextarea"
+                  style="background: none; border: none; font-size: 12px; resize: none"
+                  rows="1"
+                > <?= $sqls["kesan_s"]; ?></textarea
+                >
+              </td>
+              <td colspan="2" style="height: 150px; vertical-align: top">
+                <textarea
+                  name=""
+                  id="autoResizeTextarea"
+                  style="background: none; border: none; font-size: 12px; resize: none"
+                  rows="1"
+                > <?= $sqls["saran_s"]; ?></textarea
+                >
+              </td>
+            </tr>
+          </table>

@@ -1,0 +1,29 @@
+            <table class="w-100">
+                <tr style="height: 110px;">
+                    <td colspan="4" style="text-align: center; vertical-align: bottom; font-size: 30px; font-style: italic; font-weight: bold; padding-bottom: 30px;">AUDIOMETRI</td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="vertical-align: middle; text-align: center;">
+                        <img src="<?= $sqls['foto_aud'] ?>" width="500px" height="200px" alt="">
+                    </td>
+                </tr>
+            </table>
+            <table class="w-100 mt-4">
+                <tr>
+                    <td colspan="2" style="width: 50%; font-size: 20px; font-weight: bold; background-color: #FFCC80;">
+                        KESIMPULAN
+                    </td>
+                    <td colspan="2" style="font-size: 20px; font-weight: bold; background-color: #FFCC80;">
+                        SARAN
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="height: 150px; vertical-align: top; font-size: 12px;" class="border border-dark border-top-0 border-start-0 border-end-0 pe-3">
+                        <textarea name="" id="autoResizeTextarea" style="background: none; border: none; resize: none;" rows="1"><?= $sqls["kesan_a"]; ?></textarea>
+                    </td>
+                    <td colspan="2" style="height: 150px; vertical-align: top; font-size: 12px;" class="border border-dark border-top-0 border-start-0 border-end-0">
+                        <textarea name="" id="autoResizeTextarea" style="background: none; border: none; resize: none;" rows="1"><?= $sqls["saran_a"]; ?></textarea>
+                    </td>
+                </tr>
+
+            </table>

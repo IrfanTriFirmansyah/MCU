@@ -1,0 +1,13 @@
+{
+    "require": {
+        "phpoffice/phpspreadsheet": "^2.1",
+        "ext-gd": "*",
+        "ext-fileinfo": "*",
+        "phpoffice/phpword": "^1.2",
+        "dompdf/dompdf": "^3.0",
+        "mpdf/mpdf": "^8.2",
+        "tecnickcom/tcpdf": "^6.7",
+        "phpoffice/phppresentation": "^0.9.0",
+        "google/apiclient": "2.15.0"
+    }
+}

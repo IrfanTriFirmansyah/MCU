@@ -1,0 +1,31 @@
+                <table style="width: 98%; margin-left: 10px;">
+                    <tr style="height: 110px;">
+                        <td colspan="4" style="text-align: center; vertical-align: bottom; font-size: 30px; font-style: italic; font-weight: bold; padding-bottom: 30px;">HASIL THORAX</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="jdl-1" style="background-color: #FFCC80;">Hasil</td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top; width: 170px; padding-left: 5px;" class="jdl ps-3">Ekspertise</td>
+                        <td colspan="4"><textarea name="" id="autoResizeTextarea" style="background: none; border: none; resize: none;" rows="9">: <?= $sqls["ekspertise_r"]; ?></textarea></td>
+                    </tr>
+                </table>
+                <table class="w-100">
+                    <tr>
+                        <td colspan="2" style="width: 50%; font-size: 20px; font-weight: bold; background-color: #FFCC80;">
+                            KESIMPULAN
+                        </td>
+                        <td colspan="2" style="font-size: 20px; font-weight: bold; background-color: #FFCC80;">
+                            SARAN
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="height: 150px; vertical-align: top;" class="border border-dark border-top-0 border-start-0 border-end-0 pe-3">
+                            <textarea name="" id="autoResizeTextarea" style="background: none; border: none; resize: none;" rows="1"><?= $sqls["kesan_r"]; ?></textarea>
+                        </td>
+                        <td colspan="2" style="height: 150px; vertical-align: top;" class="border border-dark border-top-0 border-start-0 border-end-0">
+                            <textarea name="" id="autoResizeTextarea" style="background: none; border: none; resize: none;" rows="1"><?= $sqls["saran_r"]; ?></textarea>
+                        </td>
+                    </tr>
+
+                </table>

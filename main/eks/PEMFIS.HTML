@@ -1,0 +1,199 @@
+                            <table class="w-100" style="font-size: 10px;">
+                                <tr style="height: 110px;">
+                                    <td colspan="4" style="text-align: center; vertical-align: bottom; font-size: 30px; font-style: italic; font-weight: bold; padding-bottom: 30px;">PEMERIKSAAN FISIK</td>
+                                </tr>
+
+                                <tr>
+                                    <td style="background-color: #FFCC80;" colspan="4" class="jdl-1">Anamnesa</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 170px; padding-left: 5px;" class="jdl ps-3">Keluhan</td>
+                                    <td style="width: 250px;" class="jdl">: <?php if ($sqls['keluhan'] == 'ya') {
+                                                                                echo $sqls['inp_keluhan'];
+                                                                            } elseif ($sqls['keluhan'] == 'tidak') {
+                                                                                echo $sqls['keluhan'];
+                                                                            } ?></td>
+                                    <td style="width: 170px; padding-left: 5px;" class="jdl ps-3">Merokok</td>
+                                    <td style="width: 270px;" class="jdl">: <?= $sqls['merokok'] ?></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 170px; padding-left: 5px;" class="jdl ps-3">Alkohol</td>
+                                    <td style="width: 250px;" class="jdl">: <?= $sqls['alkohol'] ?></td>
+                                    <td style="width: 170px; padding-left: 5px;" class="jdl ps-3">Olahraga</td>
+                                    <td style="width: 270px;" class="jdl">: <?= $sqls['olahraga'] ?></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 170px; padding-left: 5px;" class="jdl ps-3">Asma</td>
+                                    <td style="width: 250px;" class="jdl">: <?= $sqls['asma'] ?></td>
+                                    <td style="width: 170px; padding-left: 5px;" class="jdl ps-3">TBC</td>
+                                    <td style="width: 270px;" class="jdl">: <?= $sqls['tbc'] ?></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 170px; padding-left: 5px;" class="jdl ps-3">Operasi</td>
+                                    <td style="width: 250px;" class="jdl">: <?= $sqls['operasi'] ?><b> (<?= $sqls['inp_operasi'] ?>)</b></td>
+                                    <td style="width: 170px; padding-left: 5px;" class="jdl ps-3">Alergi</td>
+                                    <td style="width: 270px;" class="jdl">: <?= $sqls['alergi'] ?><b> (<?= $sqls['inp_alergi'] ?>)</b></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 170px; padding-left: 5px;" class="jdl ps-3">Riwayat Penyakit</td>
+                                    <td style="width: 250px;word-wrap: break-word;max-width: 100px;" class="jdl">: <?= $sqls['rwt_penyakit'] ?></td>
+                                    <td style="width: 170px; padding-left: 5px;" class="jdl ps-3">Riwayat Penyakit Keluarga</td>
+                                    <td style="width: 270px; vertical-align: top;word-wrap: break-word;max-width: 100px;" class="jdl">: <?= $sqls['rwt_penyakit_kel'] ?></td>
+                                </tr>
+
+                                <tr>
+                                    <td style="background-color: #FFCC80;" colspan="4" class="jdl-1">Tanda-tanda Vital</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 170px; padding-left: 5px;" class="jdl ps-3">Tekanan</td>
+                                    <td style="width: 250px;" class="jdl">: <?= $sqls['tekanan'] ?> mm/Hg</td>
+                                    <td style="width: 170px; padding-left: 5px;" class="jdl ps-3">Tinggi Badan</td>
+                                    <td style="width: 250px;" class="jdl">: <?= $sqls['tb'] ?> cm</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 170px; padding-left: 5px;" class="jdl ps-3">Detak Nadi</td>
+                                    <td style="width: 270px;" class="jdl">: <?= $sqls['detak'] ?> /menit</td>
+                                    <td style="width: 170px; padding-left: 5px;" class="jdl ps-3">Berat Badan</td>
+                                    <td style="width: 250px;" class="jdl">: <?= $sqls['bb'] ?> kg</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 170px; padding-left: 5px;" class="jdl ps-3">Nafas</td>
+                                    <td style="width: 270px;" class="jdl">: <?= $sqls['nafas'] ?> /menit</td>
+                                    <td style="width: 170px; padding-left: 5px;" class="jdl ps-3">IMT</td>
+                                    <td style="width: 250px;" class="jdl">: <?= $sqls['imt'] ?></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 170px; padding-left: 5px;" class="jdl ps-3">Suhu</td>
+                                    <td style="width: 250px;" class="jdl">: <?= $sqls['suhu'] ?> °C</td>
+                                    <td style="width: 170px; padding-left: 5px;" class="jdl ps-3">Status</td>
+                                    <td style="width: 270px;" class="jdl">: <?= $sqls['stat'] ?></td>
+                                </tr>
+
+                                <tr>
+                                    <td style="background-color: #FFCC80;" colspan="4" class="jdl-1">Pemeriksaan Fisik</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 170px; padding-left: 5px;" class="jdl ps-3">Kepala</td>
+                                    <td style="width: 250px;" class="jdl">: <?php if ($sqls['kepala'] == 'kelainan') {
+                                                                                echo $sqls['inp_kepala'];
+                                                                            } elseif ($sqls['kepala'] == 'normal') {
+                                                                                echo $sqls['kepala'];
+                                                                            } ?></td>
+                                    <td style="width: 170px; padding-left: 5px;" class="jdl ps-3">Leher</td>
+                                    <td style="width: 270px;" class="jdl">: <?php if ($sqls['leher'] == 'kelainan') {
+                                                                                echo $sqls['inp_leher'];
+                                                                            } elseif ($sqls['leher'] == 'normal') {
+                                                                                echo $sqls['leher'];
+                                                                            } ?></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 170px; padding-left: 5px;" class="jdl ps-3">THT</td>
+                                    <td style="width: 250px;" class="jdl">: <?php if ($sqls['tht'] == 'kelainan') {
+                                                                                echo $sqls['inp_tht'];
+                                                                            } elseif ($sqls['tht'] == 'normal') {
+                                                                                echo $sqls['tht'];
+                                                                            } ?></td>
+                                    <td style="width: 170px; padding-left: 5px;" class="jdl ps-3">Dada</td>
+                                    <td style="width: 270px;" class="jdl">: <?php if ($sqls['dada'] == 'kelainan') {
+                                                                                echo $sqls['inp_dada'];
+                                                                            } elseif ($sqls['dada'] == 'normal') {
+                                                                                echo $sqls['dada'];
+                                                                            } ?></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 170px; padding-left: 5px;" class="jdl ps-3">Jantung</td>
+                                    <td style="width: 250px;" class="jdl">: <?php if ($sqls['jantung'] == 'kelainan') {
+                                                                                echo $sqls['inp_jantung'];
+                                                                            } elseif ($sqls['jantung'] == 'normal') {
+                                                                                echo $sqls['jantung'];
+                                                                            } ?></td>
+                                    <td style="width: 170px; padding-left: 5px;" class="jdl ps-3">Paru</td>
+                                    <td style="width: 270px;" class="jdl">: <?php if ($sqls['paru'] == 'kelainan') {
+                                                                                echo $sqls['inp_paru'];
+                                                                            } elseif ($sqls['paru'] == 'normal') {
+                                                                                echo $sqls['paru'];
+                                                                            } ?></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 170px; padding-left: 5px;" class="jdl ps-3">Perut</td>
+                                    <td style="width: 250px;" class="jdl">: <?php if ($sqls['perut'] == 'kelainan') {
+                                                                                echo $sqls['inp_perut'];
+                                                                            } elseif ($sqls['perut'] == 'normal') {
+                                                                                echo $sqls['perut'];
+                                                                            } ?></td>
+                                    <td style="width: 170px; padding-left: 5px;" class="jdl ps-3">Saluran Kemih</td>
+                                    <td style="width: 270px; vertical-align: top;" class="jdl">: <?php if ($sqls['kemih'] == 'kelainan') {
+                                                                                                        echo $sqls['inp_kemih'];
+                                                                                                    } elseif ($sqls['kemih'] == 'normal') {
+                                                                                                        echo $sqls['kemih'];
+                                                                                                    } ?></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 170px; padding-left: 5px;" class="jdl ps-3">Tulang Belakang</td>
+                                    <td style="width: 250px;" class="jdl">: <?php if ($sqls['sendi'] == 'kelainan') {
+                                                                                echo $sqls['inp_sendi'];
+                                                                            } elseif ($sqls['sendi'] == 'normal') {
+                                                                                echo $sqls['sendi'];
+                                                                            } ?></td>
+                                    <td style="width: 170px; padding-left: 5px;" class="jdl ps-3">Syaraf</td>
+                                    <td style="width: 270px;" class="jdl">: <?php if ($sqls['syaraf'] == 'kelainan') {
+                                                                                echo $sqls['inp_syaraf'];
+                                                                            } elseif ($sqls['syaraf'] == 'normal') {
+                                                                                echo $sqls['syaraf'];
+                                                                            } ?></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 170px; padding-left: 5px;" class="jdl ps-3">Anggota Gerak</td>
+                                    <td style="width: 250px;" class="jdl">: <?php if ($sqls['gerak'] == 'kelainan') {
+                                                                                echo $sqls['inp_gerak'];
+                                                                            } elseif ($sqls['gerak'] == 'normal') {
+                                                                                echo $sqls['gerak'];
+                                                                            } ?></td>
+                                </tr>
+
+                                <tr>
+                                    <td style="background-color: #FFCC80;" colspan="2" class="jdl-1">Pemeriksaan Mata</td>
+                                    <td style="background-color: #FFCC80;" colspan="2" class="jdl-1">Pemeriksaan Gigi</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 170px; padding-left: 5px;" class="jdl ps-3">VOD</td>
+                                    <td style="width: 250px;" class="jdl">: <?= $sqls['vod'] ?> </td>
+                                    <td style="width: 170px;" class="jdl ps-3">Gigi</td>
+                                    <td style="width: 270px; vertical-align: top;" class="jdl">: <?php if ($sqls['gigi'] == 'kelainan') {
+                                                                                                        echo $sqls['inp_gigi'];
+                                                                                                    } elseif ($sqls['gigi'] == 'normal') {
+                                                                                                        echo $sqls['gigi'];
+                                                                                                    } ?></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 170px; padding-left: 5px;" class="jdl ps-3">VOS</td>
+                                    <td style="width: 250px;" class="jdl">: <?= $sqls['vos'] ?></td>
+                                    <td style="width: 170px; padding-left: 5px;" class="jdl ps-3">Bibir</td>
+                                    <td style="width: 250px;" class="jdl">: <?php if ($sqls['bibir'] == 'kelainan') {
+                                                                                echo $sqls['inp_bibir'];
+                                                                            } elseif ($sqls['bibir'] == 'normal') {
+                                                                                echo $sqls['bibir'];
+                                                                            } ?></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 170px; padding-left: 5px;" class="jdl ps-3">Buta Warna</td>
+                                    <td style="width: 250px;" class="jdl">: <?= $sqls['buta'] ?> </td>
+                                    <td style="width: 170px;" class="jdl ps-3">Gusi</td>
+                                    <td style="width: 270px; vertical-align: top;" class="jdl">: <?php if ($sqls['gusi'] == 'kelainan') {
+                                                                                                        echo $sqls['inp_gusi'];
+                                                                                                    } elseif ($sqls['gusi'] == 'normal') {
+                                                                                                        echo $sqls['gusi'];
+                                                                                                    } ?></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 170px; padding-left: 5px;" class="jdl ps-3">Catatan</td>
+                                    <td style="width: 250px;" class="jdl">: <?= $sqls['note_mata'] ?> </td>
+                                    <td style="width: 170px;" class="jdl ps-3">Mukosa</td>
+                                    <td style="width: 270px; vertical-align: top;" class="jdl">: <?php if ($sqls['mukosa'] == 'kelainan') {
+                                                                                                        echo $sqls['inp_mukosa'];
+                                                                                                    } elseif ($sqls['mukosa'] == 'normal') {
+                                                                                                        echo $sqls['mukosa'];
+                                                                                                    } ?></td>
+                                </tr>
+
+                            </table>

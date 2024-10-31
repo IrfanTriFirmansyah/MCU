@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /mcu-v.03/
+
+# Redirect /peserta ke /view/peserta.php
+RewriteRule ^peserta$ view/peserta.php [L]

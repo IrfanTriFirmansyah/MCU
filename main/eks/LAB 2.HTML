@@ -1,0 +1,423 @@
+                <table class="w-100">
+                <tr style="height: 110px;">
+                    <td colspan="4" style="text-align: center; vertical-align: bottom; font-size: 30px; font-style: italic; font-weight: bold; padding-bottom: 30px;">LABORATORIUM</td>
+                </tr>
+                <tr style="vertical-align: top;">
+                    <td>
+                        <table class="w-100" style="font-size: 12px;">
+                            <tr class=" fw-bold" style="font-size: 14px;">
+                                <td style="background-color: #FFCC80; font-weight: bold;">
+                                    Pemeriksaan
+                                </td>
+                                <td style="background-color: #FFCC80; font-weight: bold;">
+                                    Hasil
+                                </td>
+                                <td style="background-color: #FFCC80; font-weight: bold;">
+                                    Nilai Rujukan
+                                </td>
+                                <td style="background-color: #FFCC80; font-weight: bold;">
+                                    Satuan
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td style="font-weight: bold;">
+                                    Kimia Darah
+                                </td>
+                            </tr>
+                            <?php
+                            if ($sqls["gula_darah_sewaktu"] > 0) {
+                            ?>
+                            <tr>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    Gula Darah Sewaktu
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 350px;">
+                                    <?= $sqls["gula_darah_sewaktu"]; ?>
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    < 180 </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 200px;">
+                                    mg/dl
+                                </td>
+                            </tr>
+                            <?php
+                        }
+                            if ($sqls["gula_darah_puasa"] > 0) {
+                            ?>
+                                <tr>
+                                    <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                        Gula Darah Puasa
+                                    </td>
+                                    <td class="border border-top-0 border-start-0 border-end-0" style="width: 350px;">
+                                        <?= $sqls["gula_darah_puasa"]; ?>
+                                    </td>
+                                    <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                        70-120
+                                    </td>
+                                    <td class="border border-top-0 border-start-0 border-end-0" style="width: 200px;">
+                                        mg/dl
+                                    </td>
+                                </tr>
+                            <?php }
+
+
+                            if ($sqls["gula_darah_2"] > 0) {
+                            ?>
+                                <tr>
+                                    <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                        Gula Darah 2 Jam PP
+                                    </td>
+                                    <td class="border border-top-0 border-start-0 border-end-0" style="width: 350px;">
+                                        <?= $sqls["gula_darah_2"]; ?>
+                                    </td>
+                                    <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                        < 140 </td>
+                                    <td class="border border-top-0 border-start-0 border-end-0" style="width: 200px;">
+                                        mg/dl
+                                    </td>
+                                </tr>
+                            <?php }  ?>
+                            <tr>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    Cholesterol
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 350px;">
+                                    <?= $sqls["kolesterol"]; ?>
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    < 200 </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 200px;">
+                                    mg/dl
+                                </td>
+                            </tr>
+                            <?php
+                            if ($sqls["trigliserid"] > 0) {
+                            ?>
+                                <tr>
+                                    <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                        Trigliserid
+                                    </td>
+                                    <td class="border border-top-0 border-start-0 border-end-0" style="width: 350px;">
+                                        <?= $sqls["trigliserid"]; ?>
+                                    </td>
+                                    <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                        150 - 199
+                                    </td>
+                                    <td class="border border-top-0 border-start-0 border-end-0" style="width: 200px;">
+                                        mg/dl
+                                    </td>
+                                </tr>
+                            <?php }
+
+                            if ($sqls["hdl"] > 0) {
+                            ?>
+                                <tr>
+                                    <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                        HDL
+                                    </td>
+                                    <td class="border border-top-0 border-start-0 border-end-0" style="width: 350px;">
+                                        <?= $sqls["hdl"]; ?>
+                                    </td>
+                                    <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                        > 60
+                                    </td>
+                                    <td class="border border-top-0 border-start-0 border-end-0" style="width: 200px;">
+                                        mg/dl
+                                    </td>
+                                </tr>
+                            <?php }
+
+                            if ($sqls["ldl"] > 0) {
+                            ?>
+                                <tr>
+                                    <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                        LDL
+                                    </td>
+                                    <td class="border border-top-0 border-start-0 border-end-0" style="width: 350px;">
+                                        <?= $sqls["ldl"]; ?>
+                                    </td>
+                                    <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                        < 130 </td>
+                                    <td class="border border-top-0 border-start-0 border-end-0" style="width: 200px;">
+                                        mg/dl
+                                    </td>
+                                </tr>
+                            <?php } ?>
+                            <tr>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    Asam Urat
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 350px;">
+                                    <?= $sqls["asam_urat"]; ?>
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    Laki-laki = < 7.0 <br>
+                                        Perempuan = < 6.9 </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 200px;">
+                                    mg/dl
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td style="font-weight: bold;">
+                                    Urine (Makroskopis)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    WARNA URINE
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 350px;">
+                                    <?= $sqls["warna"]; ?>
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    KUNING
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 200px;">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    KEJERNIHAN
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 350px;">
+                                    <?= $sqls["jernih"]; ?>
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    JERNIH
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 200px;">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    PROTEIN
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 350px;">
+                                    <?= $sqls["protein"]; ?>
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    NEGATIF
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 200px;">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    Reduksi
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 350px;">
+                                    <?= $sqls["reduksi"]; ?>
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    NEGATIF
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 200px;">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    PH
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 350px;">
+                                    <?= $sqls["ph"]; ?>
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    5 - 8
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 200px;">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    BERAT JENIS
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 350px;">
+                                    <?= $sqls["berat"]; ?>
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    1.003 - 1.031
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 200px;">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    BILIRUBIN
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 350px;">
+                                    <?= $sqls["bilirubin"]; ?>
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    NEGATIF
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 200px;">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    UROBILINOGEN
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 350px;">
+                                    <?= $sqls["urobilinogen"]; ?>
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    NEGATIF
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 200px;">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    NITRIT
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 350px;">
+                                    <?= $sqls["nitrit"]; ?>
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    NEGATIF
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 200px;">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    KETON
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 350px;">
+                                    <?= $sqls["keton"]; ?>
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    NEGATIF
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 200px;">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    GLUCOSA
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 350px;">
+                                    <?= $sqls["glucosa"]; ?>
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    NEGATIF
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 200px;">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    BLOOD
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 350px;">
+                                    <?= $sqls["blood"]; ?>
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    NEGATIF
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 200px;">
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td style="font-weight: bold;">
+                                    Urine (Mikroskopis)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    Leukosit
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 350px;">
+                                    <?= $sqls["leukosit_s"]; ?>
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    Laki-laki = < 5 /LPB </br>
+                                        Perempuan = < 15 /LPB </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 200px;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    Eritrosit
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 350px;">
+                                    <?= $sqls["eritrosit_s"]; ?>
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    1 - 3 /LPB
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 200px;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    Ephitel
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 350px;">
+                                    <?= $sqls["ephitel"]; ?>
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    < 15 </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 200px;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    Silinder
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 350px;">
+                                    <?= $sqls["silinder"]; ?>
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    Negatif
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 200px;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    Kristal
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 350px;">
+                                    <?= $sqls["kristal"]; ?>
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    Negatif
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 200px;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    Bakteri
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 350px;">
+                                    <?= $sqls["bakteri"]; ?>
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 300px;">
+                                    Negatif
+                                </td>
+                                <td class="border border-top-0 border-start-0 border-end-0" style="width: 200px;">
+                                </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+                </table>

@@ -1,0 +1,207 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Halaman Cetak</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="shortcut icon" href="../img/icons/icon-48x48.png" />
+
+  <link
+    rel="canonical"
+    href="https://demo-basic.adminkit.io/pages-blank.html"
+  />
+
+  <link href="../css/app.css" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    @media print {
+      /* Mengatur orientasi kertas menjadi landscape */
+      @page {
+        size: portrait;
+      }
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      width: 100%;
+    }
+
+    .contain {
+      padding: 30px;
+      width: 100%;
+      /* border: 1px solid black; */
+      display: flex;
+      justify-content: end;
+    }
+
+    /* .data tr {
+            height: 30px;
+        } */
+  </style>
+</head>
+
+<body>
+  <div class="contain row">
+    <div
+      class="col-12 border border-dark row"
+      style="display: flex; justify-content: center; padding: 0; width: 100%"
+    >
+      <div class="col-12 row">
+        <div
+          class="col-7 border border-dark border-top-0 border-bottom-0 border-end-0"
+          style="padding: 0"
+        >
+          <table class="data w-100">
+            <tr>
+              <td
+                class="border border-dark border-top-0 border-start-0 border-end-0"
+                style="
+                  width: 100%;
+                  text-align: center;
+                  font-size: 30px;
+                  font-weight: bold;
+                "
+              >
+                KARTU MCU
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="text-align: center; font-weight: bold; font-size: 20px"
+              ></td>
+            </tr>
+            <tr>
+              <td style="height: 5px"></td>
+            </tr>
+            <tr>
+              <td class="row">
+                <div class="col-4">No. Medrec</div>
+                <div class="col-8">:</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="row">
+                <div class="col-4">NIK</div>
+                <div class="col-8">: &nbsp;</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="row">
+                <div class="col-4">Nama</div>
+                <div class="col-8">: &nbsp;</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="row">
+                <div class="col-4">TTL</div>
+                <div class="col-8">: &nbsp;</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="row">
+                <div class="col-4">Jenis Kelamin</div>
+                <div class="col-8">: &nbsp;</div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div
+          class="col-5 border border-dark border-top-0 border-bottom-0"
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+          "
+        >
+          <img
+            src="../img/icons/user.png"
+            style="width: 100px; height: 100px"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="col-12 row">
+        <div
+          class="col-12 border border-dark border-start-0 border-end-0 border-bottom-0 d-flex justify-content-center align-items-center"
+          style="
+            text-align: center;
+            height: 50px;
+            font-weight: bold;
+            font-size: 20px;
+          "
+        >
+          PAKET STANDART
+        </div>
+
+        <div class="col-12 border border-dark" style="padding: 0">
+          <table style="width: 100%">
+            <tr style="font-size: 20px; font-weight: bold">
+              <td
+                class="border border-dark"
+                style="width: 15%; text-align: center"
+              >
+                <b>Ruangan</b>
+              </td>
+              <td
+                class="border border-dark"
+                style="width: 45%; text-align: center"
+              >
+                <b>Jenis Pemeriksaan</b>
+              </td>
+              <td
+                class="border border-dark"
+                style="width: 50%; text-align: center"
+                colspan="2"
+              >
+                <b>Verifikasi</b>
+              </td>
+            </tr>
+
+            <tr style="height: 70px; text-align: center">
+              <td class="border border-dark">1.</td>
+              <td class="border border-dark">Pemeriksaan Fisik</td>
+              <td colspan="2" class="border border-dark"></td>
+            </tr>
+
+            <tr style="height: 70px; text-align: center">
+              <td class="border border-dark">3.</td>
+              <td class="border border-dark">Pengambilan Sampel</td>
+              <td class="border border-dark" style="width: 20%">Darah</td>
+              <td class="border border-dark">Urine</td>
+            </tr>
+
+            <tr style="height: 70px; text-align: center">
+              <td class="border border-dark">5.</td>
+              <td class="border border-dark">Radiologi</td>
+              <td colspan="2" class="border border-dark"></td>
+            </tr>
+          </table>
+        </div>
+
+        <div
+          class="col-12"
+          style="
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          <h6 style="margin-top: 10px"><span id="date"></span></h6>
+          <div style="height: 100px"></div>
+          <h6>__________________________</h6>
+          <div style="height: 15px; margin-top: -10px; margin-bottom: 10px">
+            (Tanda Tangan Peserta MCU)
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

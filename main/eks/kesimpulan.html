@@ -1,0 +1,110 @@
+<div class="row d-flex align-items-center justify-content-center ms-3">
+    <div class="col-12 d-flex align-items-center justify-content-center">
+        <span style="font-size: 30px; height: 60px; font-style: italic; font-weight: bold; margin-top: 50px;">KESIMPULAN</span>
+    </div>
+    <div class="col-12 d-flex align-items-center justify-content-center">
+        <table style="width: 90%; font-weight: bold; text-align: left;">
+            <tr class="border-bottom" style="font-size: 15px;">
+                <td style="width: 150px;">Nama</td>
+                <td>:</td>
+                <td><?= $sql['nama'] ?></td>
+            </tr>
+            <tr class="border-bottom" style="font-size: 15px;">
+                <td>NIK</td>
+                <td>:</td>
+                <td><?= $sql['nik'] ?></td>
+            </tr>
+            <tr class="border-bottom" style="font-size: 15px;">
+                <td>Tanggal Lahir</td>
+                <td>:</td>
+                <td><?= $sql['tgl_lahir'] ?></td>
+            </tr>
+            <tr class="border-bottom" style="font-size: 15px;">
+                <td>Jenis Kelamin</td>
+                <td>:</td>
+                <td><?= $sql['jenis_kelamin'] ?></td>
+            </tr>
+            <tr class="border-bottom" style="font-size: 15px;">
+                <td>Perusahaan</td>
+                <td>:</td>
+                <td><?= $sql['nama_per'] ?></td>
+            </tr>
+            <tr class="border-bottom" style="font-size: 15px;">
+                <td>Departmen</td>
+                <td>:</td>
+                <td><?= $sql['department'] ?></td>
+            </tr>
+            <tr class="border-bottom" style="font-size: 15px;">
+                <td>Lokasi Kerja</td>
+                <td>:</td>
+                <td><?= $sql['lokasi'] ?></td>
+            </tr>
+            <tr class="border-bottom" style="font-size: 15px;">
+                <td>Tanggal Periksa</td>
+                <td>:</td>
+                <td><?= $tgl_dft ?></td>
+            </tr>
+        </table>
+    </div>
+    <div class="col-12 d-flex align-items-center justify-content-center mt-4">
+        <table style="width: 95%;">
+            <tr>
+                <td class="border border-dark" colspan="2" style="text-align: center; font-size: 20px; font-weight: bold;  background-color: #FFCC80;; height: 30px;">HASIL AKHIR</td>
+            </tr>
+            <tr>
+                <td class="border border-dark w-50 ps-4" style="font-size: 12px; height: 20px; font-weight: bold;">Fit To Work</td>
+                <td class="border border-dark w-50 ps-4" style="font-size: 12px; height: 20px; font-weight: bold;"><?php if ($sql['ket'] == 'Fit To Work') {
+                                                                                                                        echo '✔';
+                                                                                                                    } else {
+                                                                                                                    } ?></td>
+            </tr>
+            <tr>
+                <td class="border border-dark w-50 ps-4" style="font-size: 12px; height: 20px; font-weight: bold;">Fit With Note</td>
+                <td class="border border-dark w-50 ps-4" style="font-size: 12px; height: 20px; font-weight: bold;"><?php if ($sql['ket'] == 'Fit With Note') {
+                                                                                                                        echo '✔';
+                                                                                                                    } else {
+                                                                                                                    } ?></td>
+            </tr>
+            <tr>
+                <td class="border border-dark w-50 ps-4" style="font-size: 12px; height: 20px; font-weight: bold;">Temporary Unfit</td>
+                <td class="border border-dark w-50 ps-4" style="font-size: 12px; height: 20px; font-weight: bold;"><?php if ($sql['ket'] == 'Temporary Unfit') {
+                                                                                                                        echo '✔';
+                                                                                                                    } else {
+                                                                                                                    } ?></td>
+            </tr>
+            <tr>
+                <td class="border border-dark w-50 ps-4" style="font-size: 12px; height: 20px; font-weight: bold;">Not Fit To Work</td>
+                <td class="border border-dark w-50 ps-4" style="font-size: 12px; height: 20px; font-weight: bold;"><?php if ($sql['ket'] == 'Not Fit To Work') {
+                                                                                                                        echo '✔';
+                                                                                                                    } else {
+                                                                                                                    } ?></td>
+            </tr>
+        </table>
+    </div>
+    <div class="col-12 d-flex align-items-center justify-content-center mt-3">
+        <table style="width: 95%;">
+            <tr>
+                <td class="border border-dark" style="width: 100px; text-align: center; font-size: 20px; font-weight: bold; background-color: #FFCC80;;">Catatan</td>
+                <td class="border border-dark" style="width: 100px; text-align: center; font-size: 20px; font-weight: bold; background-color: #FFCC80;;">Saran</td>
+                <td class="border border-dark" style="width: 150px; text-align: center; font-size: 20px; font-weight: bold; background-color: #FFCC80;;">Tanda Tangan</td>
+            </tr>
+            <tr style="font-size: 10px;">
+                <td class="border border-dark" style="padding: 10px; vertical-align: top; height: 100%; width: 40%;">
+                    <textarea name="" id="autoResizeTextarea" style="background: none; border: none; resize: none;"><?= $sql["kesimpulan"]; ?></textarea>
+                </td>
+                <td class="border border-dark" style="padding: 10px; vertical-align: top; height: 100%; width: 40%;">
+
+                    <textarea name="" id="autoResizeTextarea" style="background: none; border: none; resize: none;"><?= $sql["saran"]; ?></textarea>
+                </td>
+                <?php
+                $ver = mysqli_query($koneksi, "SELECT nama FROM tb_dokter WHERE aktif='2'");
+                $rev = mysqli_fetch_array($ver);
+                ?>
+                <td class="border border-dark" style=" text-align: center;">
+                    <img src="../img/icons/3.png" height="150px" width="150px" alt=""><br>
+                    <?= $rev['nama'] ?>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
